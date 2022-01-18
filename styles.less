@@ -1,9 +1,12 @@
 @import "variables.less";
+@import "mixins.less";
 
 .navigation{
+    #article();
     background-color: @yellow;
     a{
         color: @black;  
+        font: @main-font;
     }
     
 }
@@ -24,42 +27,37 @@ P{
 header{
     background-color:#3B3838;
     position: relative;
+
+    .banner{
+        opacity: 33%;
+        background-color:#3B3838 
+    }
+    .overlay{
+        position:absolute;
+        bottom: 0;
+        color: #f1f1f1;
+         width: 100%;
+         text-align: center;
+    
+    
+    }
 }
 
-.banner{
-    opacity: 33%;
-    background-color:#3B3838 
-}
-.overlay{
-    position:absolute;
-    bottom: 0;
-    color: #f1f1f1;
-     width: 100%;
-     text-align: center;
 
-
-}
 
 button{
-    color: @light-black;
-    background-color:@yellow;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: 500;
-    padding: .8rem;
+    .button();
   
 }
 .best-burgers{
-    padding: 4rem;
+    #article();
 }
 
 
 
 .dine-in{
     background-color: @light-grey;
-    padding: 4rem;
+    #article();
 
 }
 
